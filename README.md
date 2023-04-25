@@ -1,3 +1,3 @@
 I will address SDG number 6: Clean Water and Sanitation. Water turbidity (essentially clarity) is a crucial method to detect water quality. According to the United Nations, at least 3 billion people depend on water of unknown quality due to lack of water quality monitoring. Usually, water quality is assessed based on a wide variety of criteria, such as but not limited to: water turbidity, conductivity, sulfate levels, and hardness. However, these require a lot of tests that involve intensive sampling and access to the water. Fortunately, water turbidity is an indicator that does not necessarily need to be monitored through sampling the water. Using a convolutional neural network (CNN), images of water can be processed to assess their quality based on turbidity. This would allow low-income people to assess the quality of their own water, simply by using their smartphone's camera.
-Research paper: https://bmvc2022.mpi-inf.mpg.de/0880.pdf
-Potential Dataset: https://github.com/lml418/WaTur-Water-Turbidity-Dataset
+Research Paper: https://www.sciencedirect.com/science/article/pii/S2352340921010271
+Dataset: https://data.mendeley.com/datasets/y6zyrnxbfm/4
