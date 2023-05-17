@@ -2,7 +2,7 @@ import numpy as np
 import tensorflow as tf
 import os
 import cv2
-from PIL import image
+from PIL import Image
 from keras.models import Model
 from keras.layers import Dense, Flatten
 from keras.preprocessing.image import ImageDataGenerator
