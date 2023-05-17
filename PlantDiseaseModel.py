@@ -2,11 +2,13 @@ import numpy as np
 import tensorflow as tf
 import os
 import cv2
-from sklearn.model_selection import train_test_split
-from tensorflow.keras.applications.resnet50 import ResNet50
-from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Dense, Flatten
-from tensorflow.python.keras.preprocessing.image import ImageDataGenerator
-import pathlib
-import pandas as pd
+from PIL import image
+from keras.models import Model
+from keras.layers import Dense, Flatten
+from keras.preprocessing.image import ImageDataGenerator
+from keras.models import load_model
 # tensorflow-metal = 0.5.0, tensorflow-macos = 2.9
+my_new_model = load_model('/Users/rohankaman/Desktop/PlantDiseaseModel-v1.h5', compile = False)
+test_image = tf.keras.utils.image.load('/Users/rohankaman/Desktop/Plant Dataset/test/test/AppleCedarRust4.JPG')
+result = my_new_model.predict(test_image)
+print(result)
