@@ -2,3 +2,4 @@ I will address SDG number 2: Zero Hunger. Right now, there are 828 million peopl
 
 
 Dataset: https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
+Model Trained on Kaggle Here: https://www.kaggle.com/code/rohankaman12/neural-network-for-plant-disease/notebook
