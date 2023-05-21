@@ -1,4 +1,4 @@
-<-- ABOUT THE PROJECT -->
+# ABOUT THE PROJECT
 
 In this project, I will address SDG number 2: Zero Hunger. Right now, there are 828 million people who go to sleep on an empty stomach every night. Even more shocking, around 2.3 billion people face some level of food insecurity on a daily basis. This is all despite the fact that there is more than enough food for everyone. This is due to a wide variety of reasons, but one of them is crop disease. An estimated 14.1% of all crops grown for human consumption perish annualy as a result of crop disease. A lot of the time, crops succumb to disease due to farmers not being able to identify which crops are suffering from what disease. Thus, in order to help combat this, this app, powered by a neural network based on Resnet, can identify 38 different types of plant/crop disease simply by taking a photo of the plant.
 
@@ -7,19 +7,51 @@ Dataset: https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
 
 Model Trained on Kaggle Here: https://www.kaggle.com/code/rohankaman12/neural-network-for-plant-disease/notebook
 
-<-- HOW TO USE-->
+# HOW TO USE
 
-### Step 1: Download the Project
+## Step 1: Download the Project
 
-### Step 2: Run the Xcode project files in Xcode
+
+## Step 2: Run the Xcode project files in Xcode
+
 Make sure your Xcode version is updated enough to run/utilise neural networks
 
-### Step 3: Connect an Apple Device and Grant Permissions
+
+## Step 3: Connect an Apple Device and Grant Permissions
+
 Connect an iPhone or iPad to your computer via USB cable. This may depend on the version of Xcode you have and your iOS version. You also may need to grant permissions on your phone and computer.
 
-### Step 4: Run the Project
+
+## Step 4: Run the Project
+
 Press the run button and wait for the app to launch on your connected device. Once launched, click the "Take Photo" button to take a photo of the plant and the app will classify what disease it has.
 
-<-- DEVELOPMENT OVERVIEW-->
 
-### Design Process
+# DEVELOPMENT OVERVIEW
+
+## Design Process
+
+### Model Training
+
+Using the dataset linked above, the neural network model was trained on Kaggle as the dataset was on Kaggle. The model is based on Resnet50 transfer learning and achieved an accuracy and validation accuracy of 96.25% and 94.99% respectively.
+
+### Model Saving and Converting to CoreML
+
+After the model was trained, I saved the weights and architecture as a .h5 file and downloaded it from Kaggle. Then, I uploaded it to Visual Studio Code and converted it to Apple's CoreML format as Xcode requires my model to be in Apple's format. In order to be able to do this, I created a Conda Virtual Environment.
+
+### App Development
+
+After converting the model to CoreML, I loaded it into Xcode and created the app's basic architecture. Due to time constraints, I wasn't able to fully develop the app's UI, but the base functionality exists.
+
+
+# WORKING PROJECT
+
+
+
+
+
+# FUTURE WORK
+
+### More Extensive Dataset
+
+Whilst the current dataset already has 38 different types of diseases, compared to the incalculable number in the world, 38 is not that many. This means that perhaps the vast majority of users of this app will be attempting to detect diseases that the model simply doesn't know about. Furthermore, there may be some regional bias in the dataset and it may not encompass a wide variety of plant diseases from different biomes around the world. Thus, in the future, I would like to create a more comprehensive app that can identify many more diseases.
