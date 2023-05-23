@@ -1,6 +1,6 @@
 # ABOUT THE PROJECT
 
-In this project, I will address SDG number 2: Zero Hunger. Right now, there are 828 million people who go to sleep on an empty stomach every night. Even more shocking, around 2.3 billion people face some level of food insecurity on a daily basis. This is all despite the fact that there is more than enough food for everyone. This is due to a wide variety of reasons, but one of them is crop disease. An estimated 14.1% of all crops grown for human consumption perish annualy as a result of crop disease. A lot of the time, crops succumb to disease due to farmers not being able to identify which crops are suffering from what disease. Thus, in order to help combat this, this app, powered by a neural network based on Resnet, can identify 38 different types of plant/crop disease simply by taking a photo of the plant.
+In this project, I will create an app that addresses SDG number 2: Zero Hunger. Right now, there are 828 million people who go to sleep on an empty stomach every night. Even more shocking, around 2.3 billion people face some level of food insecurity on a daily basis. This is all despite the fact that there is more than enough food for everyone. This is due to a wide variety of reasons, but one of them is crop disease. An estimated 14.1% of all crops grown for human consumption perish annualy as a result of crop disease. A lot of the time, crops succumb to disease due to farmers not being able to identify which crops are suffering from what disease. Thus, in order to help combat this, this app, powered by a neural network based on Resnet, can identify 38 different types of plant/crop disease simply by taking a photo of the plant.
 
 
 Dataset: https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
@@ -55,7 +55,7 @@ Right now, my project isn't working since I'm having issues loading my model. Cu
 
 ### Load the Model
 
-As previously mentioned, the model isn't loading properly. Because of how ambiguous the error messages I'm getting are, there are a wide variety of reasons as to why this is, so I need to investigate each and every one of them. This is extremely time consuming, but is something I plan on doing in the future.
+As previously mentioned, the model isn't loading properly. Because of how ambiguous the error messages I'm getting are, there are a wide variety of reasons as to why this is, so I need to investigate each and every one of them to find out why exactly my model isn't loading. This is extremely time consuming, but is something I plan on doing in the future.
 
 ### More Extensive Dataset
 
