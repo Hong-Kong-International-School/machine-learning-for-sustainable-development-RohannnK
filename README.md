@@ -14,7 +14,7 @@ Model Trained on Kaggle Here: https://www.kaggle.com/code/rohankaman12/neural-ne
 
 ## Step 2: Run the Xcode project files in Xcode
 
-Make sure your Xcode version is updated enough to run/utilise neural networks
+Make sure your Xcode version is updated enough to run/utilise neural networks. Xcode 14 and above should be sufficient.
 
 
 ## Step 3: Connect an Apple Device and Grant Permissions
@@ -31,9 +31,9 @@ Press the run button and wait for the app to launch on your connected device. On
 
 ## Design Process
 
-### Model Training
+### Model Training and Performance
 
-Using the dataset linked above, the neural network model was trained on Kaggle as the dataset was on Kaggle. The model is based on Resnet50 transfer learning and achieved an accuracy and validation accuracy of 96.25% and 94.99% respectively.
+Using the dataset linked above, the neural network model was trained on Kaggle as the dataset was on Kaggle. The model is based on Resnet50 transfer learning and achieved an accuracy and validation accuracy of 96.25% and 94.99% respectively. The full results can be seen in the Kaggle link posted prior. However, overall I am satisfied with the performance of the model as I think the accuracy and validation accuracy are quite high. 
 
 ### Model Saving and Converting to CoreML
 
@@ -41,16 +41,21 @@ After the model was trained, I saved the weights and architecture as a .h5 file 
 
 ### App Development
 
-After converting the model to CoreML, I loaded it into Xcode and created the app's basic architecture. Due to time constraints, I wasn't able to fully develop the app's UI, but the base functionality exists.
+After converting the model to CoreML, I loaded it into Xcode and created the app's basic architecture. Due to time constraints, I wasn't able to fully develop the app's UI, but part of the base functionality exists, which I will elaborate on later.
+
+# WORKING PROJECT (INCOMPLETE)
+
+[Here is a link to a video of my work in progress](https://youtube.com/shorts/wAyegYnMT98)
 
 
-# WORKING PROJECT
-
-
-
+Right now, my project isn't working since I'm having issues loading my model. Currently, I suspect that the model file may be corrupted or is being accessed incorrectly. However, as of now, the camera component works and the model works separately (the latter can be seen in Kaggle), but they don't work together.
 
 
 # FUTURE WORK
+
+### Load the Model
+
+As previously mentioned, the model isn't loading properly. Because of how ambiguous the error messages I'm getting are, there are a wide variety of reasons as to why this is, so I need to investigate each and every one of them. This is extremely time consuming, but is something I plan on doing in the future.
 
 ### More Extensive Dataset
 
