@@ -14,7 +14,7 @@ Model Trained on Kaggle Here: https://www.kaggle.com/code/rohankaman12/neural-ne
 
 ## Step 2: Run the Xcode project files in Xcode
 
-Make sure your Xcode version is updated enough to run/utilise neural networks
+Make sure your Xcode version is updated enough to run/utilise neural networks. Xcode 14 and above should be sufficient.
 
 
 ## Step 3: Connect an Apple Device and Grant Permissions
@@ -31,9 +31,9 @@ Press the run button and wait for the app to launch on your connected device. On
 
 ## Design Process
 
-### Model Training
+### Model Training and Performance
 
-Using the dataset linked above, the neural network model was trained on Kaggle as the dataset was on Kaggle. The model is based on Resnet50 transfer learning and achieved an accuracy and validation accuracy of 96.25% and 94.99% respectively.
+Using the dataset linked above, the neural network model was trained on Kaggle as the dataset was on Kaggle. The model is based on Resnet50 transfer learning and achieved an accuracy and validation accuracy of 96.25% and 94.99% respectively. The full results can be seen in the Kaggle link posted prior. However, overall I am satisfied with the performance of the model as I think the accuracy and validation accuracy are quite high. 
 
 ### Model Saving and Converting to CoreML
 
@@ -41,8 +41,7 @@ After the model was trained, I saved the weights and architecture as a .h5 file 
 
 ### App Development
 
-After converting the model to CoreML, I loaded it into Xcode and created the app's basic architecture. Due to time constraints, I wasn't able to fully develop the app's UI, but the base functionality exists.
-
+After converting the model to CoreML, I loaded it into Xcode and created the app's basic architecture. Due to time constraints, I wasn't able to fully develop the app's UI, but part of the base functionality exists, which I will elaborate on later.
 
 # WORKING PROJECT (INCOMPLETE)
 
