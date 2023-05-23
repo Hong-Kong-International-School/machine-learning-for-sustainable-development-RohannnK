@@ -44,13 +44,19 @@ After the model was trained, I saved the weights and architecture as a .h5 file 
 After converting the model to CoreML, I loaded it into Xcode and created the app's basic architecture. Due to time constraints, I wasn't able to fully develop the app's UI, but the base functionality exists.
 
 
-# WORKING PROJECT
+# WORKING PROJECT (INCOMPLETE)
+
+[Here is a link to a video of my work in progress](https://youtube.com/shorts/wAyegYnMT98)
 
 
-
+Right now, my project isn't working since I'm having issues loading my model. Currently, I suspect that the model file may be corrupted or is being accessed incorrectly. However, as of now, the camera component works and the model works separately (the latter can be seen in Kaggle), but they don't work together.
 
 
 # FUTURE WORK
+
+### Load the Model
+
+As previously mentioned, the model isn't loading properly. Because of how ambiguous the error messages I'm getting are, there are a wide variety of reasons as to why this is, so I need to investigate each and every one of them. This is extremely time consuming, but is something I plan on doing in the future.
 
 ### More Extensive Dataset
 
