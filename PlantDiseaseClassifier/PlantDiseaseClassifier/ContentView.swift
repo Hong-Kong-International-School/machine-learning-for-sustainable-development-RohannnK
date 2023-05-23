@@ -60,8 +60,8 @@ struct ContentView: View {
         guard let pixelBuffer = resizedImage.toPixelBuffer() else { return }
 
         // Load the Core ML model
-        guard let modelURL = Bundle.main.url(forResource: "plantmodel", withExtension: "mlpackage") else {
-            print("Failed to find the plantmodel.mlpackage file.")
+        guard let modelURL = Bundle.main.url(forResource: "model", withExtension: "mlmodel") else {
+            print("Failed to find the model.mlmodel file.")
             return
         }
 
@@ -89,10 +89,9 @@ struct ContentView: View {
                 }
             }
         } catch {
-            print("Failed to load the plantmodel: \(error)")
+            print("Failed to load the model.mlmodel: \(error)")
         }
     }
-
 }
 
 // Helper extensions for image resizing and conversion to CVPixelBuffer
