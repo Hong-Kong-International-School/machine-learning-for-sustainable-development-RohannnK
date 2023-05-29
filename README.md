@@ -43,19 +43,19 @@ After the model was trained, I saved the weights and architecture as a .h5 file 
 
 After converting the model to CoreML, I loaded it into Xcode and created the app's basic architecture. Due to time constraints, I wasn't able to fully develop the app's UI, but part of the base functionality exists, which I will elaborate on later.
 
-# WORKING PROJECT (INCOMPLETE)
+# WORKING PROJECT (INCOMPLETE) AND ISSUE DIAGNOSIS
 
 [Here is a link to a video of my work in progress](https://youtube.com/shorts/wAyegYnMT98)
 
 
-Right now, my project isn't working since I'm having issues loading my model. Currently, I suspect that the model file may be corrupted or is being accessed incorrectly. However, as of now, the camera component works and the model works separately (the latter can be seen in Kaggle), but they don't work together.
+Right now, my project isn't working since I'm having issues loading my model. I suspect that the model file may be corrupted or is being accessed incorrectly. After doing some research, I narrowed down the reasoning to a few possibilities. Firstly, my model file could be corrupted. This can happen during the CoreML conversion. There isn't really a fix for this since this can happen for a variety of reasons such as version inconsistencies and missing packages/dependencies, so I need to look through my files to check those. Another possibility, the most probable, is that there is an inconsistency between the version of the CoreML compiler, XCode, my model, and the iOS that I'm using. Apple is extremely pedantic about these things, and I have already spent hours trying to figure out the versions of the aforementioned things. Thus, further investigation is needed to determine which things need to be upgraded or downgraded. However, as of now, the camera component works and the model works separately (the latter can be seen in Kaggle), but they don't work together.
 
 
 # FUTURE WORK
 
 ### Load the Model
 
-As previously mentioned, the model isn't loading properly. Because of how ambiguous the error messages I'm getting are, there are a wide variety of reasons as to why this is, so I need to investigate each and every one of them to find out why exactly my model isn't loading. This is extremely time consuming, but is something I plan on doing in the future.
+As previously mentioned, the model isn't loading properly. Because of how ambiguous the error messages I'm getting are, there are a wide variety of reasons as to why this is, so I need to investigate each and every one of them to find out why exactly my model isn't loading, as elaborated on prior. This is extremely time consuming, but is something I plan on doing in the future.
 
 ### More Extensive Dataset
 
